@@ -7,8 +7,8 @@ import com.crud.tasks.service.DbService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/v1/tasks")
@@ -26,8 +26,7 @@ public class TaskController {
 
     @GetMapping(value = "{taskId}")
     public TaskDto getTask(@PathVariable Long taskId) {
-        Task taskById = dbService.getTaskById(taskId);
-        return taskMapper.mapToTaskDto(taskById);
+        return taskMapper.mapToTaskDto(dbService.getTask(taskId).orElse(new Task()));
     }
 
     @DeleteMapping
