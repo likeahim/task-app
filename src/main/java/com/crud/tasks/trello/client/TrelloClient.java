@@ -60,10 +60,10 @@ public class TrelloClient {
 
     private URI getUri() {
         URI url = UriComponentsBuilder.fromHttpUrl(trelloConfig.getTrelloApiEndpoint() + "/members/" + trelloConfig.getTrelloUsername() + "/boards")
-                .queryParam("key", trelloConfig.getTrelloApiKey())
-                .queryParam("token", trelloConfig.getTrelloToken())
                 .queryParam("fields", "name,id")
                 .queryParam("lists", "all")
+                .queryParam("key", trelloConfig.getTrelloApiKey())
+                .queryParam("token", trelloConfig.getTrelloToken())
                 .build().encode().toUri();
         return url;
     }
