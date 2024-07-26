@@ -9,6 +9,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.util.ArrayList;
@@ -17,10 +19,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
-@ExtendWith(MockitoExtension.class)
+@SpringBootTest
 public class TrelloMapperTest {
 
-    @Mock
+    @Autowired
     TrelloMapper trelloMapper;
 
     private static TrelloList trelloList;
@@ -52,8 +54,6 @@ public class TrelloMapperTest {
         @Test
         void shouldMapToBoards() {
             //Given
-            when(trelloMapper.mapToBoards(trelloBoardDtos)).thenReturn(trelloBoards);
-
             //When
             List<TrelloBoard> returnedList = trelloMapper.mapToBoards(List.of(trelloBoardDto));
 
@@ -67,8 +67,6 @@ public class TrelloMapperTest {
         @Test
         void shouldMapToBoardsDto() {
             //Given
-            when(trelloMapper.mapToBoardsDto(trelloBoards)).thenReturn(trelloBoardDtos);
-
             //When
             List<TrelloBoardDto> returnedListDto = trelloMapper.mapToBoardsDto(trelloBoards);
 
@@ -83,7 +81,6 @@ public class TrelloMapperTest {
     @Test
     void shouldMapToList() {
         //Given
-        when(trelloMapper.mapToList(listTrelloListDto)).thenReturn(listTrelloList);
         //When
         List<TrelloList> trelloLists = trelloMapper.mapToList(listTrelloListDto);
         //Then
@@ -95,7 +92,6 @@ public class TrelloMapperTest {
     @Test
     void shouldMapToListDto() {
         //Given
-        when(trelloMapper.mapToListDto(listTrelloList)).thenReturn(listTrelloListDto);
         //When
         List<TrelloListDto> trelloListsDto = trelloMapper.mapToListDto(listTrelloList);
         //Then
@@ -117,8 +113,6 @@ public class TrelloMapperTest {
         @Test
         void shouldMapToCardDto() {
             //Given
-            when(trelloMapper.mapToCardDto(trelloCard)).thenReturn(trelloCardDto);
-
             //When
             TrelloCardDto returnedCardDto = trelloMapper.mapToCardDto(trelloCard);
 
@@ -130,8 +124,6 @@ public class TrelloMapperTest {
         @Test
         void shouldMapToCard() {
             //Given
-            when(trelloMapper.mapToCard(trelloCardDto)).thenReturn(trelloCard);
-
             //When
             TrelloCard returnedCard = trelloMapper.mapToCard(trelloCardDto);
 
