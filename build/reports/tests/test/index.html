@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">21</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.131s</div>
+<div class="counter">1.108s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">80%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,25 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/com.crud.tasks.controller.TaskControllerTest.html">TaskControllerTest</a>.
+<a href="classes/com.crud.tasks.controller.TaskControllerTest.html#shouldUpdateTask()">shouldUpdateTask()</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -79,69 +91,19 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
-<a href="packages/com.crud.tasks.html">com.crud.tasks</a>
+<td class="failures">
+<a href="packages/com.crud.tasks.controller.html">com.crud.tasks.controller</a>
 </td>
+<td>5</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0.483s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="packages/com.crud.tasks.mapper.html">com.crud.tasks.mapper</a>
-</td>
-<td>9</td>
-<td>0</td>
-<td>0</td>
-<td>0.141s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="packages/com.crud.tasks.service.html">com.crud.tasks.service</a>
-</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0.430s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="packages/com.crud.tasks.trello.client.html">com.crud.tasks.trello.client</a>
-</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0.864s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="packages/com.crud.tasks.trello.config.html">com.crud.tasks.trello.config</a>
-</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.005s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="packages/com.crud.tasks.trello.facade.html">com.crud.tasks.trello.facade</a>
-</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0.208s</td>
-<td class="success">100%</td>
+<td>1.108s</td>
+<td class="failures">80%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -156,104 +118,14 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
-<a href="classes/com.crud.tasks.TasksApplicationTests.html">com.crud.tasks.TasksApplicationTests</a>
+<td class="failures">
+<a href="classes/com.crud.tasks.controller.TaskControllerTest.html">com.crud.tasks.controller.TaskControllerTest</a>
 </td>
+<td>5</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0.483s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.mapper.TaskMapperTest.html">com.crud.tasks.mapper.TaskMapperTest</a>
-</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0.059s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.mapper.TrelloMapperTest.html">com.crud.tasks.mapper.TrelloMapperTest</a>
-</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0.033s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.mapper.TrelloMapperTest$NestedBoardsMappingTest.html">com.crud.tasks.mapper.TrelloMapperTest$NestedBoardsMappingTest</a>
-</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0.019s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.mapper.TrelloMapperTest$NestedCardsMappingTests.html">com.crud.tasks.mapper.TrelloMapperTest$NestedCardsMappingTests</a>
-</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0.030s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.service.DBServiceTest.html">com.crud.tasks.service.DBServiceTest</a>
-</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0.340s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.service.SimpleEmailServiceTest.html">com.crud.tasks.service.SimpleEmailServiceTest</a>
-</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.090s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.trello.client.TrelloClientTest.html">com.crud.tasks.trello.client.TrelloClientTest</a>
-</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0.864s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.trello.config.TrelloConfigTest.html">com.crud.tasks.trello.config.TrelloConfigTest</a>
-</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.005s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">
-<a href="classes/com.crud.tasks.trello.facade.TrelloFacadeTest.html">com.crud.tasks.trello.facade.TrelloFacadeTest</a>
-</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0.208s</td>
-<td class="success">100%</td>
+<td>1.108s</td>
+<td class="failures">80%</td>
 </tr>
 </tbody>
 </table>
@@ -266,7 +138,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 26 lip 2024, 15:44:40</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 27 lip 2024, 20:12:19</p>
 </div>
 </div>
 </body>
