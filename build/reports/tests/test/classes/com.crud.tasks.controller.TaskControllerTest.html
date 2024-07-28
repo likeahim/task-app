@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.215s</div>
+<div class="counter">0.782s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,28 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">shouldCreateTask()</td>
-<td class="success">0.055s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldDeleteTaskById()</td>
-<td class="success">0.023s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldFetchListWithTasks()</td>
-<td class="success">0.062s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldFetchTaskById()</td>
-<td class="success">0.235s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
 <td class="success">shouldUpdateTask()</td>
-<td class="success">0.840s</td>
+<td class="success">0.782s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,11 +87,20 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-07-28 15:02:36.755  INFO 5752 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.crud.tasks.controller.TaskControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2024-07-28 15:02:36.760  INFO 5752 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.crud.tasks.controller.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-07-28 15:02:36.865  INFO 5752 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.crud.tasks.TasksApplication for test class com.crud.tasks.controller.TaskControllerTest
-2024-07-28 15:02:36.870  INFO 5752 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-07-28 15:02:36.875  INFO 5752 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f915016, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@533165e7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@324e62e2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1018552d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75eca6d8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2afbdf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6cb2d5ea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3ed1446c, org.springframework.test.context.event.EventPublishingTestExecutionListener@2e9bff08, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@54151d07, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2e729fea, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1a345c6c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6b26839d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@17a756db, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2d10160a]
+<pre>21:44:50.278 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:44:50.325 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:44:50.434 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.crud.tasks.controller.TaskControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+21:44:50.481 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.crud.tasks.controller.TaskControllerTest]: class path resource [com/crud/tasks/controller/TaskControllerTest-context.xml] does not exist
+21:44:50.497 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.crud.tasks.controller.TaskControllerTest]: class path resource [com/crud/tasks/controller/TaskControllerTestContext.groovy] does not exist
+21:44:50.497 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.crud.tasks.controller.TaskControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:44:50.497 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.crud.tasks.controller.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:44:50.714 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.crud.tasks.controller.TaskControllerTest]
+21:44:51.022 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\menea\IdeaProjects\task-app\build\classes\java\main\com\crud\tasks\TasksApplication.class]
+21:44:51.037 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.crud.tasks.TasksApplication for test class com.crud.tasks.controller.TaskControllerTest
+21:44:51.053 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.crud.tasks.controller.TaskControllerTest]: using defaults.
+21:44:51.053 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+21:44:51.084 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@180e6ac4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@42b64ab8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7e985ce9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2a39fe6a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@410ae9a3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@319988b0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@d5ae57e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@68759011, org.springframework.test.context.event.EventPublishingTestExecutionListener@7e242b4d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@305f031, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@592e843a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1d1f7216, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@423e4cbb, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6e16b8b5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@43b4fe19]
+21:44:51.100 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@226642a5 testClass = TaskControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7e809b79 testClass = TaskControllerTest, locations = '{}', classes = '{class com.crud.tasks.TasksApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@50ecde95, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@d3957fe, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@d41a5ad0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@dd282c1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6b98a075, [ImportsContextCustomizer@5cc126dc key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5c8504fd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3f07b12c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@a896363a, org.springframework.test.context.web.socket.MockServerContainerContextCustomizer@625abb97, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -121,12 +110,12 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.0)
 
-2024-07-28 15:02:36.994  INFO 5752 --- [    Test worker] c.c.tasks.controller.TaskControllerTest  : Starting TaskControllerTest using Java 17.0.12 on Grubi with PID 5752 (started by menea in C:\Users\menea\IdeaProjects\task-app)
-2024-07-28 15:02:36.994  INFO 5752 --- [    Test worker] c.c.tasks.controller.TaskControllerTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-07-28 15:02:40.759  INFO 5752 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-07-28 15:02:40.759  INFO 5752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-07-28 15:02:40.775  INFO 5752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
-2024-07-28 15:02:40.806  INFO 5752 --- [    Test worker] c.c.tasks.controller.TaskControllerTest  : Started TaskControllerTest in 3.935 seconds (JVM running for 33.716)
+2024-07-28 21:44:52.111  INFO 9780 --- [    Test worker] c.c.tasks.controller.TaskControllerTest  : Starting TaskControllerTest using Java 17.0.12 on Grubi with PID 9780 (started by menea in C:\Users\menea\IdeaProjects\task-app)
+2024-07-28 21:44:52.111  INFO 9780 --- [    Test worker] c.c.tasks.controller.TaskControllerTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-07-28 21:44:59.967  INFO 9780 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-07-28 21:44:59.967  INFO 9780 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-07-28 21:44:59.967  INFO 9780 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-07-28 21:45:00.092  INFO 9780 --- [    Test worker] c.c.tasks.controller.TaskControllerTest  : Started TaskControllerTest in 8.875 seconds (JVM running for 12.295)
 </pre>
 </span>
 </div>
@@ -138,7 +127,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 28 lip 2024, 15:02:48</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 28 lip 2024, 21:45:01</p>
 </div>
 </div>
 </body>

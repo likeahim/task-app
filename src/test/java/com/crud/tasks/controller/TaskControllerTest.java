@@ -111,9 +111,9 @@ class TaskControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .characterEncoding("UTF-8")
                         .content(jsonCont))
-                .andExpect(MockMvcResultMatchers.status().isOk());
-//                .andExpect(MockMvcResultMatchers.jsonPath("$.title", Matchers.is("updated name task")))
-//                .andExpect(MockMvcResultMatchers.jsonPath("$.content", Matchers.is("updated content task")));
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.title", Matchers.is("updated name task")))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.content", Matchers.is("updated content task")));
     }
 
     @Test

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.crud.tasks.trello.client.TrelloClientTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-28T13:02:46" hostname="GRUBI" time="0.915">
-  <properties/>
-  <testcase name="shouldReturnEmptyList()" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.883"/>
-  <testcase name="shouldFetchTrelloBoards()" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.014"/>
-  <testcase name="shouldCreateCard()" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.015"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
