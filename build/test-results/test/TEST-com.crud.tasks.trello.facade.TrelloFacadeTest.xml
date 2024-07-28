@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.crud.tasks.trello.facade.TrelloFacadeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-28T13:02:47" hostname="GRUBI" time="0.213">
+  <properties/>
+  <testcase name="shouldFetchTrelloBoards()" classname="com.crud.tasks.trello.facade.TrelloFacadeTest" time="0.188"/>
+  <testcase name="shouldFetchEmptyList()" classname="com.crud.tasks.trello.facade.TrelloFacadeTest" time="0.011"/>
+  <testcase name="shouldFetchTrelloCard()" classname="com.crud.tasks.trello.facade.TrelloFacadeTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
